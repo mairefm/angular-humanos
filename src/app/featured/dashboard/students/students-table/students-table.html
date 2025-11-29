@@ -1,0 +1,108 @@
+@if (isLoading$ | async) {
+
+<div class="loading-wrapper">
+    <mat-spinner></mat-spinner>
+</div>
+
+} @else {
+
+<section class="students-toolbar">
+
+    <h1 class="page-title">Listado de Humanos</h1>
+
+    <div class="top-bar-create">
+        <button class="btn-create" mat-flat-button color="primary" routerLink="create">
+            Registrar Humano
+        </button>
+    </div>
+
+    <div class="filters-row">
+        <div class="chips-row">
+            <mat-chip-listbox class="status-chips">
+                <mat-chip-option [selected]="selectedStatus === ''" (click)="onStatusFilterChange('')">
+                    Todos
+                </mat-chip-option>
+
+                <mat-chip-option [selected]="selectedStatus === 'ACTIVE'" (click)="onStatusFilterChange('ACTIVE')">
+                    Activos
+                </mat-chip-option>
+
+                <mat-chip-option [selected]="selectedStatus === 'INACTIVE'" (click)="onStatusFilterChange('INACTIVE')">
+                    Inactivos
+                </mat-chip-option>
+
+                <mat-chip-option [selected]="selectedStatus === 'GRADUATED'"
+                    (click)="onStatusFilterChange('GRADUATED')">
+                    Entrenamiento completado
+                </mat-chip-option>
+            </mat-chip-listbox>
+        </div>
+
+        <mat-form-field class="search-field">
+            <mat-icon matPrefix>search</mat-icon>
+            <input matInput placeholder="Buscar por nombre o correo..." (keyup)="applyFilter($event)" #input />
+        </mat-form-field>
+    </div>
+
+    <div class="mat-elevation-z8 students-table-wrapper">
+        <table mat-table [dataSource]="dataSource">
+
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef>ID</th>
+                <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef>Nombre</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.firstName }} {{ row.lastName }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef>Correo</th>
+                <td mat-cell *matCellDef="let row">{{ row.email }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="course">
+                <th mat-header-cell *matHeaderCellDef>Programa</th>
+                <td mat-cell *matCellDef="let row">{{ row.course }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef>Estado</th>
+                <td mat-cell *matCellDef="let row">
+                    {{ row.status }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                <td mat-cell *matCellDef="let row" class="actions-cell">
+                    <button mat-icon-button matTooltip="Editar humano" [routerLink]="['edit', row.id]">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+
+                    <button mat-icon-button matTooltip="Eliminar humano" (click)="onDeleteStudent(row.id)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="6">
+                    No hay humanos registrados con los filtros seleccionados.
+                </td>
+            </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25]" aria-label="Seleccionar página de humanos">
+        </mat-paginator>
+    </div>
+
+</section>
+
+}

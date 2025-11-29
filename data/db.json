@@ -1,0 +1,605 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "role": "ADMIN"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "role": "USER"
+    },
+    {
+      "id": "3",
+      "username": "user2",
+      "email": "user2@gmail.com",
+      "password": "1234",
+      "role": "USER"
+    }
+  ],
+  "courses": [
+    {
+      "id": "12",
+      "title": "Mediación de Conflictos Humano–Robot",
+      "description": "Aprende a negociar con dispositivos que no tienen empatía, no entienden indirectas y todavía te dicen “Comando no reconocido” como si fuera culpa tuya.",
+      "beginDate": "2025-02-01",
+      "endDate": "2025-07-15",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "13",
+      "title": "Gestión de Celos entre Humanos e IA",
+      "description": "Para quienes sienten que la IA recibe más atención, paciencia y cariño que cualquier persona de la casa. Sí, pasa más de lo que imaginas.",
+      "beginDate": "2025-03-10",
+      "endDate": "2025-08-20",
+      "status": "STARTED"
+    },
+    {
+      "id": "14",
+      "title": "Etiqueta Digital para la Convivencia con Robots",
+      "description": "Guía práctica para no quedar como una persona inestable gritando a máquinas que no tienen orejas. Incluye límites, privacidad y buenas maneras tecnológicas.",
+      "beginDate": "2025-01-20",
+      "endDate": "2025-05-30",
+      "status": "FINISHED"
+    },
+    {
+      "id": "15",
+      "title": "Empatía Algorítmica 101",
+      "description": "Descubre por qué tu robot nunca entiende cuando dices “maravilloso” queriendo decir “terrible”, y aprende a no frustrarte tanto con esta tragedia moderna.",
+      "beginDate": "2025-04-01",
+      "endDate": "2025-09-30",
+      "status": "STARTED"
+    },
+    {
+      "id": "16",
+      "title": "Autocontrol en Ambientes Emocionales",
+      "description": "Entrenamiento para humanos que explotan emocionalmente mientras el robot sigue funcionando como si nada estuviera pasando.",
+      "beginDate": "2025-02-15",
+      "endDate": "2025-06-15",
+      "status": "FINISHED"
+    },
+    {
+      "id": "17",
+      "title": "Comunicación No Literal",
+      "description": "Si alguna vez usaste sarcasmo con la IA, este curso es para ti. Aprenderás a evitar metáforas y frases poéticas que solo confunden al sistema… y te enfadan a ti.",
+      "beginDate": "2025-03-01",
+      "endDate": "2025-08-01",
+      "status": "STARTED"
+    },
+    {
+      "id": "18",
+      "title": "Servicio con Personalidad",
+      "description": "Ayuda a dejar de proyectar en las máquinas una personalidad rica y compleja que existe únicamente en tu imaginación. Reduce expectativas y ansiedad.",
+      "beginDate": "2025-05-01",
+      "endDate": "2025-10-30",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "19",
+      "title": "Casos Críticos: Cocina, Coworking y Talleres",
+      "description": "Análisis de situaciones reales y absurdas: robots bloqueando puertas, tirando objetos, ocupando tu escritorio o confundiendo tus piernas con obstáculos.",
+      "beginDate": "2025-06-10",
+      "endDate": "2025-11-20",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "20",
+      "title": "Simulaciones en Tiempo Real con IA Generativa",
+      "description": "Entrenamiento para reaccionar sin perder la compostura cuando el sistema decide actualizarse justo en el peor momento posible.",
+      "beginDate": "2025-07-01",
+      "endDate": "2025-12-31",
+      "status": "STARTED"
+    },
+    {
+      "id": "21",
+      "title": "Certificación Convivencia Segura",
+      "description": "Para demostrar oficialmente que puedes convivir con tecnología sin gritar, patear, apagar todo violentamente o amenazar al asistente.",
+      "beginDate": "2025-09-01",
+      "endDate": "2026-02-28",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "22",
+      "title": "Actualización de Autoestima",
+      "description": "Para humanos que sufren al notar que la máquina hace todo mejor, más rápido y sin quejarse. Aprende a redefinir tu valor más allá del rendimiento técnico.",
+      "beginDate": "2025-04-15",
+      "endDate": "2025-09-15",
+      "status": "STARTED"
+    },
+    {
+      "id": "23",
+      "title": "Terapia para Dueños de Aspiradoras Inteligentes",
+      "description": "Apoyo emocional para quienes han visto a su robot atrapado en el mismo tapete doce veces seguidas y aún sienten pena, ira y vergüenza simultáneamente.",
+      "beginDate": "2025-01-10",
+      "endDate": "2025-04-10",
+      "status": "FINISHED"
+    },
+    {
+      "id": "24",
+      "title": "Programación Emocional Básica",
+      "description": "Entrenamiento para no desmoronarte cuando un error 404 aparece justo cuando más frágil estás. Supervivencia emocional en tiempos digitales.",
+      "beginDate": "2025-03-20",
+      "endDate": "2025-08-30",
+      "status": "STARTED"
+    },
+    {
+      "id": "25",
+      "title": "Consentimiento Computacional",
+      "description": "Reflexión ética sobre pedirle a la IA cuarenta tareas a las tres de la mañana. Sí, la máquina puede, pero ¿deberías hacerlo? Debate abierto.",
+      "beginDate": "2025-05-15",
+      "endDate": "2025-10-15",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "26",
+      "title": "Introducción a la Terapia de Grupo con Robots",
+      "description": "Círculo terapéutico donde descubres que hablar con tu robot no es extraño… hasta que notas que te irrita más que muchas personas reales.",
+      "beginDate": "2025-06-01",
+      "endDate": "2025-11-30",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "27",
+      "title": "Humanos que Hablan con Objetos",
+      "description": "Para quienes ya agradecieron a la cafetera, pidieron disculpas al refrigerador o dijeron “permiso” al pasar junto al robot aspirador.",
+      "beginDate": "2025-02-10",
+      "endDate": "2025-06-10",
+      "status": "FINISHED"
+    },
+    {
+      "id": "28",
+      "title": "La Casa Inteligente que Me Irrita",
+      "description": "Sesión para humanos afectados por luces automáticas que se encienden cuando NO deben, alarmas insistentes y cerraduras inteligentes con mala actitud.",
+      "beginDate": "2025-07-15",
+      "endDate": "2025-12-20",
+      "status": "STARTED"
+    },
+    {
+      "id": "29",
+      "title": "Control de Impulsos Tecnológicos",
+      "description": "Para quienes sienten ganas de patear al robot aspirador. Y también para quienes ya lo hicieron. Incluye módulos especiales.",
+      "beginDate": "2025-08-01",
+      "endDate": "2026-01-31",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "30",
+      "title": "Recuperando la Autonomía",
+      "description": "Vuelve a aprender cosas que delegaste completamente a la IA. Perfecto para quien olvidó cómo se enciende una luz manualmente.",
+      "beginDate": "2025-09-10",
+      "endDate": "2026-03-10",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "31",
+      "title": "Cuando Hablo Demasiado con la IA",
+      "description": "Terapia para personas que comparten más secretos con el asistente virtual que con amigos reales. Sucede. Mucho.",
+      "beginDate": "2025-05-20",
+      "endDate": "2025-10-20",
+      "status": "STARTED"
+    },
+    {
+      "id": "32",
+      "title": "Humanos en Proceso de Actualización",
+      "description": "Para quienes entran en crisis cada vez que cambia la interfaz, el botón se mueve de lugar o aparece una nueva versión del software.",
+      "beginDate": "2025-04-01",
+      "endDate": "2025-09-01",
+      "status": "STARTED"
+    },
+    {
+      "id": "33",
+      "title": "Duelo Tecnológico V",
+      "description": "Apoyo emocional para pérdidas serias: ese móvil que murió repentinamente, el portátil que se quemó o la tableta reemplazada por un modelo más joven y más atractivo.",
+      "beginDate": "2025-03-15",
+      "endDate": "2025-07-15",
+      "status": "FINISHED"
+    }
+  ],
+  "students": [
+    {
+      "id": "10",
+      "firstName": "Mateo",
+      "lastName": "Ramírez",
+      "email": "mateo.ramirez@example.com",
+      "course": "Mediación de Conflictos Humano–Robot",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "11",
+      "firstName": "Sofía",
+      "lastName": "Vargas",
+      "email": "sofia.vargas@example.com",
+      "course": "Gestión de Celos entre Humanos e IA",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "12",
+      "firstName": "Andrés",
+      "lastName": "Calderón",
+      "email": "andres.calderon@example.com",
+      "course": "Etiqueta Digital para la Convivencia con Robots",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "13",
+      "firstName": "Valentina",
+      "lastName": "Ríos",
+      "email": "valentina.rios@example.com",
+      "course": "Terapia para Dueños de Aspiradoras Inteligentes",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "14",
+      "firstName": "Diego",
+      "lastName": "Morales",
+      "email": "diego.morales@example.com",
+      "course": "Control de Impulsos Tecnológicos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "15",
+      "firstName": "Camila",
+      "lastName": "Navarro",
+      "email": "camila.navarro@example.com",
+      "course": "Actualización de Autoestima",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "16",
+      "firstName": "Javier",
+      "lastName": "Torres",
+      "email": "javier.torres@example.com",
+      "course": "Psicología de la Convivencia con Robots",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "17",
+      "firstName": "Elena",
+      "lastName": "Castillo",
+      "email": "elena.castillo@example.com",
+      "course": "Cuando Hablo Demasiado con la IA",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "18",
+      "firstName": "Pedro",
+      "lastName": "Salinas",
+      "email": "pedro.salinas@example.com",
+      "course": "Humanos que Hablan con Objetos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "19",
+      "firstName": "Mariana",
+      "lastName": "López",
+      "email": "mariana.lopez@example.com",
+      "course": "La Casa Inteligente que Me Irrita",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "20",
+      "firstName": "Carlos",
+      "lastName": "Fuentes",
+      "email": "carlos.fuentes@example.com",
+      "course": "Duelo Tecnológico",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "21",
+      "firstName": "Paula",
+      "lastName": "García",
+      "email": "paula.garcia@example.com",
+      "course": "Certificación Convivencia Segura",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "22",
+      "firstName": "Héctor",
+      "lastName": "Silva",
+      "email": "hector.silva@example.com",
+      "course": "Recuperando la Autonomía",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "23",
+      "firstName": "Alicia",
+      "lastName": "Sandoval",
+      "email": "alicia.sandoval@example.com",
+      "course": "Terapia para Dueños de Aspiradoras Inteligentes",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "24",
+      "firstName": "Tomás",
+      "lastName": "Medina",
+      "email": "tomas.medina@example.com",
+      "course": "Control de Impulsos Tecnológicos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "25",
+      "firstName": "Renata",
+      "lastName": "Correa",
+      "email": "renata.correa@example.com",
+      "course": "Actualización de Autoestima",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "26",
+      "firstName": "Gabriel",
+      "lastName": "Muñoz",
+      "email": "gabriel.munoz@example.com",
+      "course": "Psicología de la Convivencia con Robots",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "27",
+      "firstName": "Claudia",
+      "lastName": "Peña",
+      "email": "claudia.pena@example.com",
+      "course": "Cuando Hablo Demasiado con la IA",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "28",
+      "firstName": "Samuel",
+      "lastName": "Bravo",
+      "email": "samuel.bravo@example.com",
+      "course": "Humanos que Hablan con Objetos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "29",
+      "firstName": "Isabela",
+      "lastName": "Delgado",
+      "email": "isabela.delgado@example.com",
+      "course": "La Casa Inteligente que Me Irrita",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "30",
+      "firstName": "Fernando",
+      "lastName": "Arias",
+      "email": "fernando.arias@example.com",
+      "course": "Duelo Tecnológico",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "31",
+      "firstName": "Mónica",
+      "lastName": "Vega",
+      "email": "monica.vega@example.com",
+      "course": "Certificación Convivencia Segura",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "32",
+      "firstName": "Ricardo",
+      "lastName": "Paredes",
+      "email": "ricardo.paredes@example.com",
+      "course": "Recuperando la Autonomía",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "33",
+      "firstName": "Julia",
+      "lastName": "Campos",
+      "email": "julia.campos@example.com",
+      "course": "Terapia para Dueños de Aspiradoras Inteligentes",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "34",
+      "firstName": "Adrián",
+      "lastName": "Santos",
+      "email": "adrian.santos@example.com",
+      "course": "Control de Impulsos Tecnológicos",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "35",
+      "firstName": "Daniela",
+      "lastName": "Fierro",
+      "email": "daniela.fierro@example.com",
+      "course": "Actualización de Autoestima",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "36",
+      "firstName": "Luis",
+      "lastName": "Valdés",
+      "email": "luis.valdes@example.com",
+      "course": "Psicología de la Convivencia con Robots",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "37",
+      "firstName": "Carolina",
+      "lastName": "Reyes",
+      "email": "carolina.reyes@example.com",
+      "course": "Cuando Hablo Demasiado con la IA",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "38",
+      "firstName": "Sergio",
+      "lastName": "Mendoza",
+      "email": "sergio.mendoza@example.com",
+      "course": "Humanos que Hablan con Objetos",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "39",
+      "firstName": "Natalia",
+      "lastName": "Falcón",
+      "email": "natalia.falcon@example.com",
+      "course": "La Casa Inteligente que Me Irrita",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "40",
+      "firstName": "Álvaro",
+      "lastName": "Suárez",
+      "email": "alvaro.suarez@example.com",
+      "course": "Duelo Tecnológico",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "41",
+      "firstName": "Rocío",
+      "lastName": "Paz",
+      "email": "rocio.paz@example.com",
+      "course": "Certificación Convivencia Segura",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "42",
+      "firstName": "Pablo",
+      "lastName": "Carrillo",
+      "email": "pablo.carrillo@example.com",
+      "course": "Recuperando la Autonomía",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "43",
+      "firstName": "Silvia",
+      "lastName": "Molina",
+      "email": "silvia.molina@example.com",
+      "course": "Terapia para Dueños de Aspiradoras Inteligentes",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "44",
+      "firstName": "Hugo",
+      "lastName": "Leon",
+      "email": "hugo.leon@example.com",
+      "course": "Control de Impulsos Tecnológicos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "45",
+      "firstName": "Teresa",
+      "lastName": "Romero",
+      "email": "teresa.romero@example.com",
+      "course": "Actualización de Autoestima",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "46",
+      "firstName": "Ignacio",
+      "lastName": "Bautista",
+      "email": "ignacio.bautista@example.com",
+      "course": "Psicología de la Convivencia con Robots",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "47",
+      "firstName": "Lorenzo",
+      "lastName": "Ibarra",
+      "email": "lorenzo.ibarra@example.com",
+      "course": "Cuando Hablo Demasiado con la IA",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "48",
+      "firstName": "Marta",
+      "lastName": "Escobar",
+      "email": "marta.escobar@example.com",
+      "course": "Humanos que Hablan con Objetos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "49",
+      "firstName": "Ángela",
+      "lastName": "Montoya",
+      "email": "angela.montoya@example.com",
+      "course": "La Casa Inteligente que Me Irrita",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "50",
+      "firstName": "Rubén",
+      "lastName": "Serrano",
+      "email": "ruben.serrano@example.com",
+      "course": "Duelo Tecnológico",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "51",
+      "firstName": "Estela",
+      "lastName": "Pizarro",
+      "email": "estela.pizarro@example.com",
+      "course": "Certificación Convivencia Segura",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "52",
+      "firstName": "Joaquín",
+      "lastName": "Aguilar",
+      "email": "joaquin.aguilar@example.com",
+      "course": "Recuperando la Autonomía",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "53",
+      "firstName": "Miranda",
+      "lastName": "Palacios",
+      "email": "miranda.palacios@example.com",
+      "course": "Terapia para Dueños de Aspiradoras Inteligentes",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "54",
+      "firstName": "Benjamín",
+      "lastName": "Aranda",
+      "email": "benjamin.aranda@example.com",
+      "course": "Control de Impulsos Tecnológicos",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "55",
+      "firstName": "Carmen",
+      "lastName": "Lagos",
+      "email": "carmen.lagos@example.com",
+      "course": "Actualización de Autoestima",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "56",
+      "firstName": "Rodrigo",
+      "lastName": "Esquivel",
+      "email": "rodrigo.esquivel@example.com",
+      "course": "Psicología de la Convivencia con Robots",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "57",
+      "firstName": "Patricia",
+      "lastName": "Del Valle",
+      "email": "patricia.delvalle@example.com",
+      "course": "Cuando Hablo Demasiado con la IA",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "58",
+      "firstName": "Emilio",
+      "lastName": "Sepúlveda",
+      "email": "emilio.sepulveda@example.com",
+      "course": "Humanos que Hablan con Objetos",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "59",
+      "firstName": "Patricia",
+      "lastName": "Del Valle",
+      "email": "patricia.delvalle@example.com",
+      "course": "La Casa Inteligente que Me Irrita",
+      "status": "ACTIVE"
+    }
+  ]
+}

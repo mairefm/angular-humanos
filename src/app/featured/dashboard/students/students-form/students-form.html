@@ -1,0 +1,61 @@
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+  @if (isEditing) {
+  <mat-form-field appearance="fill">
+    <mat-label>ID</mat-label>
+    <input matInput disabled value="{{ studentId }}" />
+  </mat-form-field>
+  }
+
+  <!-- Nome -->
+  <mat-form-field class="w-full">
+    <mat-label>Nombre</mat-label>
+    <input matInput name="firstName" formControlName="firstName" [ngClass]="{
+        'is-invalid': inputInvalid('firstName'),
+        'is-valid': inputValid('firstName') && createForm.get('firstName')?.dirty
+      }" />
+    <mat-error>{{ getError('firstName') }}</mat-error>
+  </mat-form-field>
+
+  <!-- Sobrenome -->
+  <mat-form-field class="w-full">
+    <mat-label>Apellido</mat-label>
+    <input matInput name="lastName" formControlName="lastName" [ngClass]="{
+        'is-invalid': inputInvalid('lastName'),
+        'is-valid': inputValid('lastName') && createForm.get('lastName')?.dirty
+      }" />
+    <mat-error>{{ getError('lastName') }}</mat-error>
+  </mat-form-field>
+
+  <!-- Email -->
+  <mat-form-field class="w-full">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" name="email" formControlName="email" [ngClass]="{
+        'is-invalid': inputInvalid('email'),
+        'is-valid': inputValid('email') && createForm.get('email')?.dirty
+      }" />
+    <mat-error>{{ getError('email') }}</mat-error>
+  </mat-form-field>
+
+  <!-- Curso -->
+  <mat-form-field class="w-full">
+    <mat-label>Curso</mat-label>
+    <input matInput name="course" formControlName="course" [ngClass]="{
+        'is-invalid': inputInvalid('course'),
+        'is-valid': inputValid('course') && createForm.get('course')?.dirty
+      }" />
+    <mat-error>{{ getError('course') }}</mat-error>
+  </mat-form-field>
+
+  <!-- Status -->
+  <mat-form-field class="w-full">
+    <mat-label>Estado</mat-label>
+    <mat-select name="status" formControlName="status">
+      <mat-option value="ACTIVE">Activo</mat-option>
+      <mat-option value="INACTIVE">Inactivo</mat-option>
+      <mat-option value="GRADUATED">Graduado</mat-option>
+    </mat-select>
+    <mat-error>{{ getError('status') }}</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Guardar</button>
+</form>

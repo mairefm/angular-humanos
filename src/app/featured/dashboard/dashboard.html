@@ -1,0 +1,70 @@
+<mat-drawer-container class="drawer-container" autosize>
+  <!-- SIDENAV -->
+  <mat-drawer #drawer class="sidenav" mode="side" opened>
+
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Logo Calma, Humano!" class="brand-logo" />
+
+      <div class="brand-text">
+        <h4 class="brand-name">Calma, Humano!</h4>
+      </div>
+    </div>
+
+    <mat-nav-list>
+
+      @for (item of listItems; track $index) {
+
+      @if ((user$ | async)?.role === 'USER') {
+      @if (item.name !== 'Humanos') {
+      <a mat-list-item [routerLink]="item.url">
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        <span matListItemLine>{{ item.name }}</span>
+      </a>
+      }
+      }
+
+      @if ((user$ | async)?.role === 'ADMIN') {
+      <a mat-list-item [routerLink]="item.url">
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        <span matListItemLine>{{ item.name }}</span>
+      </a>
+      }
+
+      }
+
+      <a mat-list-item (click)="logout()">
+        <mat-icon matListItemIcon>logout</mat-icon>
+        <span matListItemLine>Salir</span>
+      </a>
+
+    </mat-nav-list>
+
+  </mat-drawer>
+
+  <!-- ÁREA PRINCIPAL -->
+  <div class="content-wrapper">
+
+    <mat-toolbar class="top-toolbar">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span class="top-toolbar__title">
+        Panel de entrenamiento
+      </span>
+
+      <span class="top-toolbar__spacer"></span>
+
+      <div class="top-toolbar__user" *ngIf="user$ | async as user">
+        <mat-icon>smart_toy</mat-icon>
+        <span class="user-name">{{ user.username }}</span>
+      </div>
+    </mat-toolbar>
+
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+</mat-drawer-container>

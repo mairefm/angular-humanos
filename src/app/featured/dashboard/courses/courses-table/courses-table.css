@@ -1,0 +1,109 @@
+.courses-toolbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.top-bar-create {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-create {
+  padding: 6px 18px !important;
+  border-radius: 999px !important;
+  height: 34px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.filters-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chips-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-chips mat-chip-option {
+  border-radius: 16px !important;
+  padding: 0 10px !important;
+  font-weight: 500;
+  font-size: 0.8rem;
+  height: 30px !important;
+  display: flex;
+  align-items: center;
+}
+
+.status-chips mat-chip-option.mat-mdc-chip-selected {
+  background: #a600ff22 !important;
+  color: #9b00dd !important;
+  border: 1px solid #9b00dd !important;
+}
+
+.search-field {
+  margin-left: auto;
+  width: 340px;
+  max-width: 100%;
+  min-width: 260px;
+  height: 64px;
+  --mdc-filled-text-field-container-shape: 20px;
+  --mdc-filled-text-field-container-color: #f1dfe8;
+  --mdc-filled-text-field-focus-active-indicator-height: 0px;
+  --mdc-filled-text-field-active-indicator-height: 0px;
+  border-radius: 20px !important;
+  overflow: hidden;
+}
+
+.search-field .mat-mdc-form-field-flex {
+  height: 30px;
+  border-radius: 20px;
+}
+
+.search-field .mat-mdc-form-field-infix {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.search-field input {
+  font-size: 0.7rem;
+}
+
+.search-field mat-icon {
+  margin-right: 3px;
+}
+
+.courses-table-wrapper {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.description-text {
+  max-width: 210px;
+  font-size: 0.9rem;
+}
+
+.badge {
+  padding: 2px 6px;
+  font-size: 0.65rem;
+}
+
+.actions-cell button mat-icon {
+  font-size: 20px;
+}

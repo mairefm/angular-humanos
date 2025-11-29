@@ -1,0 +1,129 @@
+:root {
+  --ch-orange: #ff7a1f;
+  --ch-purple: #6a48ff;
+  --ch-cyan: #78e5e1;
+  --ch-dark: #0f1b2b;
+}
+
+/* HEADER */
+.home-header {
+  margin-bottom: 24px;
+}
+
+.home-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: var(--ch-dark);
+}
+
+.home-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* LAYOUT ADMIN – duas colunas */
+.home-admin {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+/* CARD VISÃO GERAL */
+.overview-card {
+  width: 100%;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 4px;
+  font-size: 0.95rem;
+}
+
+.metric-row--title {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* RESUMO DE PROGRAMAS */
+.module-summary__title {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ch-dark);
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.module-card {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  border-left: 4px solid var(--ch-cyan);
+}
+
+.module-card__title {
+  margin: 0 0 4px;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.module-card__number {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.module-card__note {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* LAYOUT USER */
+.home-user {
+  margin-top: 16px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.user-card {
+  padding: 18px 20px;
+  border-radius: 18px;
+}
+
+.user-card__title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ch-dark);
+}
+
+.user-card__info {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.user-card--highlight {
+  border-left: 4px solid var(--ch-orange);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .home-admin {
+    grid-template-columns: 1fr;
+  }
+}

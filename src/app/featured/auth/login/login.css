@@ -1,0 +1,216 @@
+:root {
+  --ch-orange: #ff7a1f;
+  --ch-purple: #6a48ff;
+  --ch-cyan: #78e5e1;
+  --ch-cyan-light: #c0f7f3;
+  --ch-dark: #0f1b2b;
+}
+
+/* FUNDO DA PÁGINA */
+.login-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #c0f7f3 0%, #78e5e1 40%, #5fd5cf 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  font-family: "Fredoka", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* MEGA CARD CENTRAL */
+.login-card-shell {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.18);
+  padding: 40px 48px;
+  display: flex;
+  gap: 48px;
+  box-sizing: border-box;
+
+  align-items: center;
+  /* centraliza verticalmente */
+  justify-content: center;
+  /* centraliza horizontalmente */
+}
+
+/* ---------------------------
+   LOGIN (AGORA À ESQUERDA)
+---------------------------- */
+.shell-right {
+  order: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 28px;
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-title,
+.login-card .mat-mdc-card-title,
+.login-card .mat-card-title {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--ch-purple);
+  margin-bottom: 20px;
+}
+
+.login-field {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+/* BOTÃO */
+.login-btn {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 999px;
+  background-color: var(--ch-orange) !important;
+  color: var(--ch-orange) !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(255, 122, 31, 0.45);
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #ff8c36 !important;
+  transform: translateY(-3px);
+}
+
+/* TEXTO AUXILIAR */
+.helper-text {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--ch-dark);
+  text-align: center;
+}
+
+.helper-text a {
+  color: var(--ch-purple);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.helper-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------
+   COLUNA DIREITA (LOGO + TEXTO + IMAGEM)
+---------------------------- */
+.shell-left {
+  order: 2;
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LOGO + BADGE */
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+/* LOGO ARREDONDADO */
+.logo {
+  height: 80px;
+  border-radius: 20px;
+  /* <= arredondamento */
+}
+
+/* BADGE OPCIONAL */
+.logo-badge {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: rgba(255, 122, 31, 0.15);
+  color: var(--ch-orange);
+}
+
+/* TÍTULO E SUBTÍTULO */
+.title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: var(--ch-dark);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0 0 24px;
+  color: var(--ch-dark);
+  text-align: center;
+}
+
+/* IMAGEM HUMANO + ROBÔ */
+.hero-img {
+  width: 60%;
+  max-width: 320px;
+  border-radius: 25px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------------------
+   RESPONSIVIDADE
+---------------------------- */
+@media (max-width: 960px) {
+  .login-card-shell {
+    flex-direction: column-reverse;
+    padding: 28px 22px;
+    gap: 32px;
+  }
+
+  .shell-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 360px;
+  }
+
+  .login-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 20px 10px;
+  }
+
+  .login-card-shell {
+    padding: 22px 16px;
+    border-radius: 24px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-img {
+    max-width: 300px;
+  }
+}

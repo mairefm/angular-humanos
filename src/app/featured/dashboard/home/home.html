@@ -1,0 +1,106 @@
+<header class="home-header">
+  <h1 class="home-title">
+    Hola, {{ (user$ | async)?.username }} 👋
+  </h1>
+  <p class="home-subtitle">
+    Aquí tienes un resumen de cómo va tu entrenamiento para convivir mejor con tus robots en casa.
+  </p>
+</header>
+
+@if ((user$ | async)?.role === 'ADMIN') {
+
+<section class="home-admin">
+
+  <!-- COLUNA ESQUERDA: VISÃO GERAL -->
+  <mat-card class="overview-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Panel de control de la semana</mat-card-title>
+      <mat-card-subtitle>Robots domésticos, sesiones y humanos activos</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <div class="metric-row">
+        <span>Sesiones de entrenamiento completadas</span>
+        <span>82%</span>
+      </div>
+      <mat-progress-bar mode="determinate" [value]="82"></mat-progress-bar>
+
+      <div class="metric-row">
+        <span>Rutinas de convivencia revisadas</span>
+        <span>65%</span>
+      </div>
+      <mat-progress-bar mode="determinate" [value]="65" color="accent"></mat-progress-bar>
+
+      <div class="metric-row metric-row--title">
+        <span>Humanos activos esta semana</span>
+        <span>148</span>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-stroked-button color="primary">Ver reporte completo</button>
+      <button mat-flat-button color="accent">Exportar</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <!-- COLUNA DIREITA: RESUMO DE PROGRAMAS / MÓDULOS -->
+  <section class="module-summary">
+    <h3 class="module-summary__title">Programas destacados</h3>
+
+    <div class="module-grid">
+      <div class="module-card">
+        <h4 class="module-card__title">Rutinas básicas con tu robot</h4>
+        <p class="module-card__number">35 hogares activos</p>
+        <p class="module-card__note">Nivel inicial</p>
+      </div>
+
+      <div class="module-card">
+        <h4 class="module-card__title">Comunicación humano–robot</h4>
+        <p class="module-card__number">27 hogares activos</p>
+        <p class="module-card__note">Nivel intermedio</p>
+      </div>
+
+      <div class="module-card">
+        <h4 class="module-card__title">Seguridad y límites saludables</h4>
+        <p class="module-card__number">19 hogares activos</p>
+        <p class="module-card__note">En progreso</p>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+} @else {
+
+<section class="home-user">
+  <div class="user-grid">
+
+    <mat-card class="user-card">
+      <h3 class="user-card__title">Tus entrenamientos activos</h3>
+      <p class="user-card__info">
+        Actualmente estás siguiendo 3 programas para mejorar la convivencia con tus robots.
+      </p>
+      <button mat-flat-button color="primary">Ver mis entrenamientos</button>
+    </mat-card>
+
+    <mat-card class="user-card">
+      <h3 class="user-card__title">Progreso general</h3>
+      <p class="user-card__info">
+        Has completado el 42% de tu plan de entrenamiento.
+      </p>
+      <mat-progress-bar mode="determinate" [value]="42"></mat-progress-bar>
+    </mat-card>
+
+    <mat-card class="user-card user-card--highlight">
+      <h3 class="user-card__title">Siguiente paso sugerido</h3>
+      <p class="user-card__info">
+        Practica hoy el módulo “Comunicación humano–robot” durante 15 minutos.
+      </p>
+      <button mat-stroked-button color="accent">Continuar módulo</button>
+    </mat-card>
+
+  </div>
+</section>
+
+}

@@ -1,0 +1,47 @@
+<div class="login-page">
+  <div class="login-card-shell">
+    <!-- COLUNA ESQUERDA: LOGIN -->
+    <div class="shell-right">
+      <mat-card class="login-card">
+        <mat-card-title class="login-title">Inicio de sesión</mat-card-title>
+
+        <mat-card-content>
+          <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <mat-form-field appearance="fill" class="login-field">
+              <mat-label>Email</mat-label>
+              <input matInput type="email" formControlName="email" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="login-field">
+              <mat-label>Contraseña</mat-label>
+              <input matInput type="password" formControlName="password" />
+            </mat-form-field>
+
+            <button mat-raised-button class="login-btn" type="submit">
+              Iniciar sesión
+            </button>
+
+            <p class="helper-text">
+              ¿Olvidaste tu contraseña?
+              <a href="#">Recupérala aquí</a>.
+            </p>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- COLUNA DIREITA: LOGO + TEXTO + IMAGEM -->
+    <div class="shell-left">
+      <div class="logo-row">
+        <img src="assets/img/logo.png" class="logo" alt="Calma, Humano!" />
+      </div>
+
+      <h1 class="title">Calma, Humano!</h1>
+      <p class="subtitle">
+        Plataforma de entrenamiento para humanos que conviven con robots en casa.
+      </p>
+
+      <img src="assets/img/calma_humano.jpg" class="hero-img" alt="Humano y robot felices" />
+    </div>
+  </div>
+</div>
