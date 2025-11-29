@@ -1,9 +1,8 @@
-# Women Tech Learning Dashboard — Angular + NgRx + Material
+# 🤖 Calma Humano — Plataforma de Entrenamiento Humano–Robot
 
-Aplicação desenvolvida como **projeto final do curso de Angular da CoderHouse**.  
-Trata-se de um **painel administrativo** para gestão de **cursos** e **alumnas**, com autenticação, controle de permissões, CRUDs completos, filtros avançados e UI moderna baseada no tema **Women in Tech**.
+Aplicación desarrollada como proyecto final del curso de Angular de CoderHouse, ahora completamente rediseñada bajo el concepto Calma, Humano!, una plataforma futurista dedicada al entrenamiento de humanos que conviven con robots en casa.
 
-Ideal como projeto de portfólio para demonstrar domínio de Angular moderno e boas práticas de frontend.
+El sistema funciona como un panel administrativo para gestionar humanos, programas de entrenamiento y su progreso, con autenticación basada en roles, filtros avanzados, UI moderna y arquitectura escalable.
 
 ---
 
@@ -12,7 +11,7 @@ Ideal como projeto de portfólio para demonstrar domínio de Angular moderno e b
 - 🔐 Login com roles (Admin/User)
 - 🔒 Proteção de rotas com AuthGuard
 - 📚 CRUD completo de Cursos
-- 👩‍🎓 CRUD completo de Alumnas
+- 👩‍🎓 CRUD completo de Humanos
 - 🔍 Busca em tempo real
 - 🎯 Filtros por status (chips dinâmicos)
 - 📅 Date Range Picker para cursos
@@ -20,18 +19,6 @@ Ideal como projeto de portfólio para demonstrar domínio de Angular moderno e b
 - 🧠 State Management com NgRx Store + Effects
 - 🎨 Interface moderna e responsiva (Angular Material + CSS customizado)
 - 🗄️ API fake utilizando JSON Server
-
----
-
-## 🛠️ Tecnologias utilizadas
-
-- Angular 17+
-- TypeScript
-- Angular Material
-- NgRx (Store, Effects)
-- RxJS
-- HTML5 / SCSS
-- JSON Server
 
 ---
 
@@ -64,28 +51,3 @@ http://localhost:3000/courses
 http://localhost:3000/students
 ```
 
-## 🧠 O que aprendi no projeto
-
-- Organização de aplicações Angular em módulos e features
-- Uso avançado de Reactive Forms
-- Roteamento, guards e roles
-- Comunicação com API e serviços HTTP
-- Componentização, Smart vs Dumb Components
-- Gerência de estado com NgRx
-- UI com Angular Material + personalização de temas
-- Clean Code e boas práticas
-
-## 📝 Próximos passos
-
-- Criar dashboard com gráficos (Charts.js)
-- Implementar cadastro de usuários
-- Criar sistema de notificações
-- Publicar em ambiente online (Firebase Hosting / Vercel)
-
-## 👩🏻‍💻 Autora
-
-Mairê Malheiros
-Desenvolvedora & Instrutora de Tecnologia
-GitHub: @mairefm
-
-LinkedIn: Mairê Malheiros
