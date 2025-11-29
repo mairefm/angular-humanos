@@ -42,7 +42,7 @@ http://localhost:4200
 
 ### 3️⃣ Iniciar o JSON Server (API fake)
 ```bash
-npx json-server --watch db.json --port 3000
+npx json-server --watch data/db.json --port 3000
 ```
 
 ### Acesse:
